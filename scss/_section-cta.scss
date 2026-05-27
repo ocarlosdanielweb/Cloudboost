@@ -1,0 +1,29 @@
+.section_cta{
+    padding: 9.6rem 1.5rem;
+    & .container{
+        @include flex-center;
+        flex-direction: column;
+        padding: 8rem 21.5rem;
+        border-radius: 10px;
+        background: linear-gradient(93deg, #4320C3 -4.63%, #3D11DB 105.14%);
+        text-align: center;
+        & h1{
+            text-wrap: balance;
+        }
+        & p{
+            font-size: 2rem;
+            color:$gray-200;
+            text-wrap: balance;
+            margin-top: 0.8rem;
+            margin-bottom: 3.2rem;
+        }
+    }
+    @include responsivo(tablet){
+        & .container{
+            padding: 7.2rem 1.5rem;
+            & h1{
+                font-size: 4rem;
+            }
+        }
+    }
+}

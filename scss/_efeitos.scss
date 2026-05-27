@@ -1,0 +1,47 @@
+.scroll-bottom{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(0px, 30px);
+}
+
+.scroll-top{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(0px, -30px);
+}
+
+.scroll-left{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(-30px, 0px);
+}
+
+.scroll-right{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(30px, 0px);
+}
+
+.elementor-editor-active .scroll-bottom,
+.elementor-editor-active .scroll-top,
+.elementor-editor-active .scroll-left,
+.elementor-editor-active .scroll-right,
+.ativo{
+    opacity: 1;
+    transition: 0.8s;
+    transform: translatey(0px);
+}
+
+
+
+.elemento1{
+    transition-delay: 0.2s;
+}
+
+.elemento2{
+    transition-delay: 0.4s;
+}
+
+.elemento3{
+    transition-delay: 0.6s;
+}

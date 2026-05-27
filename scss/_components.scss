@@ -1,0 +1,92 @@
+.content-box{
+    max-width: 28rem;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+        translate: 0 -8px;
+    }
+    & .content-box-img{
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    & .content-box-title{
+        color: var($gray-100);
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    & .content-box-description{
+        font-size: 1.6rem;
+        color: $gray-600;
+    }
+}
+
+.primary-btn{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: $purple-10;
+    padding: 1.4rem 2.4rem;
+    transition: all .3s ease-in-out;
+    color: $gray-100;
+    font-weight: 500;
+    font-size: 1.8rem;
+    &:hover{
+        translate:0 -4px;
+        background: $purple-20;
+    }
+    &.large{
+        padding: 2rem 6.4rem;
+    }
+}
+
+.form-email{
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 4px 4px 4px 24px;
+    max-width: 52.1rem;
+    width: 100%;
+    gap: 16px;
+    & input{
+        all:unset;
+        flex:1;
+        line-height: 150%;
+        font-size: 1.6rem;
+        color:$gray-100;
+        &::placeholder{
+        color: $gray-300;
+        }
+    }
+}
+
+.avatars{
+    @include flex-center;
+    gap: 0.8rem;
+    & .profiles{
+        display: flex;
+        & img{
+            transition: all .3s ease-in-out;
+            &:hover{
+                translate:0 -4px;
+            }
+        }
+        & img:not(:first-child){
+            margin-left: -1.2rem;
+        }
+    }
+    & .rating{
+        @include flex-center;
+        gap: 4px;
+        & span{
+            font-size: 1.8rem;
+            color:$gray-600;
+            & strong{
+                color: $gray-100;
+            }
+        }
+    }
+}
