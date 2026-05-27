@@ -37,9 +37,25 @@
             gap: 7.2rem;
             & .hero-content{
                 align-items: center;
+                gap: 3.2rem;
                 & .hero-text{
                     text-align: center;
                     align-items: center;
+                }
+            }
+        }
+    }
+    @include responsivo(mobile){
+        & .container{
+            padding: 7.2rem 1.5rem;
+            & .hero-content{
+                & .hero-text{
+                    & h1{
+                font-size: 4rem;
+                    }
+                    & p{
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }

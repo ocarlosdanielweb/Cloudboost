@@ -26,4 +26,16 @@
             }
         }
     }
+    @include responsivo(mobile){
+        padding: 7.2rem 1.5rem;
+        & .container{
+            padding: 7.2rem 1.5rem;
+            & h1{
+                font-size: 3.2rem;
+            }
+            & p{
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
